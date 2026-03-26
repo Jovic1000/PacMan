@@ -1,0 +1,7 @@
+﻿  main.cpp
+gamewell.lib(Object.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(Object.obj)' or at 'C:\Temp\Jasons Work\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(GameScreen.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(GameScreen.obj)' or at 'C:\Temp\Jasons Work\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(Renderer.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(Renderer.obj)' or at 'C:\Temp\Jasons Work\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(InputManager.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(InputManager.obj)' or at 'C:\Temp\Jasons Work\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(IDSystem.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(IDSystem.obj)' or at 'C:\Temp\Jasons Work\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+  Pac-Man.vcxproj -> C:\Temp\Jasons Work\Pac-Man\x64\Debug\Pac-Man.exe
