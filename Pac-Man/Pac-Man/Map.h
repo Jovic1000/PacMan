@@ -1,8 +1,8 @@
 #pragma once
 
-const int NUM_OF_MAP_OBJECTS = (32 * 32);
+const int NUM_OF_MAP_OBJECTS = (15 * 15);
 
-class Object;
+class B_BaseTile;
 class Map
 {
 public:
@@ -16,7 +16,7 @@ public:
 private:
 
 	// pointer to a array of object pointers
-	Object** m_mapParts;
+	B_BaseTile** m_mapParts;
 
 };
 

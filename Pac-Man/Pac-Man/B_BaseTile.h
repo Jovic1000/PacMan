@@ -9,8 +9,15 @@ public:
 	// Inherited via ITile
 	// Getters - Setters
 	void SetCollide(bool canCollide);
+	void SetCollisionFlags(int collisionFlags);
+
 	virtual bool CanCollide(E_TYPE type) override;
 
+
+	// empty constructor
+	B_BaseTile();
+
+	// constructor that adds collision on creation
 	B_BaseTile(bool canCollide, int collisionFlags);
 	~B_BaseTile();
 
