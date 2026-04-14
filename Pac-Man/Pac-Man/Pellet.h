@@ -1,9 +1,16 @@
 #pragma once
-#include "IEntity.h"
+#include "B_BaseEntity.h"
 
-class Pellet : public IEntity
+class Pellet : public B_BaseEntity
 {
 public:
-	E_TYPE GetType() override { return PELLET; }
+
+	void Update() override;
+	void Render() override;
+
+	Pellet();
+
+private:
+
 };
 

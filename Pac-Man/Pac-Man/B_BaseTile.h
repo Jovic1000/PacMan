@@ -6,7 +6,6 @@ class B_BaseTile : public Object, public ITile
 {
 public:
 
-	// Inherited via ITile
 	// Getters - Setters
 	void SetCollide(bool canCollide);
 	void SetCollisionFlags(int collisionFlags);

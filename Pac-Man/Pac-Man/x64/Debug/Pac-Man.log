@@ -1,2 +1,8 @@
-﻿  Map.cpp
-  Pac-Man.vcxproj -> E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\Pac-Man.exe
+﻿  B_BaseEntity.cpp
+  B_BaseTile.cpp
+  Game.cpp
+  Map.cpp
+  PacMan.cpp
+  Pellet.cpp
+  Generating Code...
+  Pac-Man.vcxproj -> C:\Temp\Jasons Work\Pac-Man Git\Pac-Man\x64\Debug\Pac-Man.exe

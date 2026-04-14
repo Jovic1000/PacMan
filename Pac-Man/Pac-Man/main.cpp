@@ -6,7 +6,9 @@
 
 int main()
 {
-	Game game("Test_0.3");
+	Game game("Pac-Man");
+
+	game.Init();
 
 	// checks if the game is running and will loop until it is not
 	while (game.GetGameRunning())

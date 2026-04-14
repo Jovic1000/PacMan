@@ -23,9 +23,9 @@ bool Screen::GetIsOpen()
 Screen::Screen(const char* windowName) : m_gameScreen(new GameScreen())
 {
 	// creates a game screen on object creation
-	if (m_gameScreen->CreateScreen(windowName));
+	if (m_gameScreen->CreateScreen(windowName, 600, 650));
 	{
-		m_gameScreen->SetBackgroundRGB(0, 0, 255);
+		m_gameScreen->SetBackgroundRGB(0, 0, 0);
 	}
 }
 
