@@ -1,8 +1,18 @@
 ﻿  B_BaseEntity.cpp
   B_BaseTile.cpp
   Game.cpp
+  GameUI.cpp
+  main.cpp
   Map.cpp
   PacMan.cpp
   Pellet.cpp
+  Screen.cpp
   Generating Code...
-  Pac-Man.vcxproj -> C:\Temp\Jasons Work\Pac-Man Git\Pac-Man\x64\Debug\Pac-Man.exe
+E:\GitHub Clone Repository\PacMan\Pac-Man\Pac-Man\Screen.cpp(26,55): warning C4390: ';': empty controlled statement found; is this the intent?
+gamewell.lib(Object.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(Object.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(TextObject.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(TextObject.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(GameScreen.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(GameScreen.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(Renderer.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(Renderer.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(InputManager.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(InputManager.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(IDSystem.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(IDSystem.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+  Pac-Man.vcxproj -> E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\Pac-Man.exe

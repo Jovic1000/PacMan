@@ -8,7 +8,10 @@ public:
 
 	virtual void Update() override;
 	virtual void Render() override;
+
+	// collision
 	bool CanCollide(E_TYPE type) override;
+	void SetCollision(int collisionFlags) override;
 
 	// Getters
 	E_TYPE GetType() override;
@@ -20,7 +23,7 @@ public:
 	void SetPosition(int positionX, int positionY) override;
 
 
-	B_BaseEntity(E_TYPE type, Object* mesh);
+	B_BaseEntity(E_TYPE type, int collisionFlags, Object* mesh);
 
 private:
 
