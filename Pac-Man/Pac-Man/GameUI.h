@@ -10,6 +10,7 @@ public:
 	static void DeInit();
 	
 	void Render();
+	void IncreaseScore(int score);
 
 	// Getters - Setters
 	static GameUI* GetInst();

@@ -43,6 +43,11 @@ void GameUI::Render()
 	m_scoreText->Update();
 }
 
+void GameUI::IncreaseScore(int score)
+{
+	m_score += score;
+}
+
 
 GameUI::GameUI() : m_nuberOfLives(3), m_score(0)
 {

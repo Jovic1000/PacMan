@@ -10,11 +10,16 @@ int main()
 
 	game.Init();
 
+	bool isComplite = true;
+
 	// checks if the game is running and will loop until it is not
-	while (game.GetGameRunning())
+	while (isComplite)
 	{
-		game.Update();
-		game.Render();
+		if (game.GetGameRunning())
+		{
+			game.Update();
+			game.Render();
+		}
 	}
 
 	system("pause");

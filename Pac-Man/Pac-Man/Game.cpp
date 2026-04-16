@@ -15,7 +15,16 @@ void Game::Update()
 
 	for (int i = 0; i < Num_Of_Pellets; i++)
 	{
-		m_player->GetMesh()->IsOverlapping(m_pellets[i])
+		if(m_pellets[i] != nullptr && m_pelletsEaten >= Num_Of_Pellets)
+		{
+			if (m_player->GetMesh()->IsOverlapping(*(m_pellets[i]->GetMesh())))
+			{
+				delete m_pellets[i];
+				m_pellets = nullptr;
+
+				m_pelletsEaten++;
+			}
+		}
 	}
 }
 
@@ -52,7 +61,12 @@ bool Game::GetGameRunning()
 	return m_gameRunning && m_screen->GetIsOpen();
 }
 
-Game::Game(const char* gameName) : m_screen(new Screen(gameName)), m_map(new Map()), m_player(new PacMan()), m_pellets(new B_BaseEntity*[Num_Of_Pellets]), m_gameRunning(true)
+Screen* Game::GetScreen()
+{
+	return m_screen;
+}
+
+Game::Game(const char* gameName) : m_screen(new Screen(gameName)), m_map(new Map()), m_player(new PacMan()), m_pellets(new B_BaseEntity*[Num_Of_Pellets]), m_gameRunning(true), m_pelletsEaten(0)
 {
 
 	EntityFactory Facto100;

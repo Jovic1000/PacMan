@@ -16,6 +16,7 @@ public:
 	// Setters - Getters
 	void SetGameRunning(bool isTrue);
 	bool GetGameRunning();
+	Screen* GetScreen();
 
 	Game(const char* gameName);
 	~Game();
@@ -29,6 +30,7 @@ private:
 	B_BaseEntity** m_pellets;
 
 	bool m_gameRunning;
+	int m_pelletsEaten;
 
 };
 

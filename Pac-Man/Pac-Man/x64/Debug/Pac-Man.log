@@ -1,8 +1,2 @@
-﻿  FSM.cpp
-  S_MovementState.cpp
-C:\Temp\Jasons Work\Pac-Man Git\Pac-Man\Pac-Man\Pac-Man\S_MovementState.cpp(38,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Temp\Jasons Work\Pac-Man Git\Pac-Man\Pac-Man\Pac-Man\S_MovementState.cpp(42,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Temp\Jasons Work\Pac-Man Git\Pac-Man\Pac-Man\Pac-Man\S_MovementState.cpp(48,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Temp\Jasons Work\Pac-Man Git\Pac-Man\Pac-Man\Pac-Man\S_MovementState.cpp(52,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
-  Pac-Man.vcxproj -> C:\Temp\Jasons Work\Pac-Man Git\Pac-Man\Pac-Man\x64\Debug\Pac-Man.exe
+﻿  Game.cpp
+  Pac-Man.vcxproj -> E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\Pac-Man.exe

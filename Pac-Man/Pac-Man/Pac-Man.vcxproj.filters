@@ -79,7 +79,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PowerPellet.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Entitys</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -135,7 +135,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PowerPellet.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Entitys</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
