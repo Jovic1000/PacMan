@@ -128,27 +128,40 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="B_BaseEntity.cpp" />
+    <ClCompile Include="B_BaseState.cpp" />
     <ClCompile Include="B_BaseTile.cpp" />
+    <ClCompile Include="EntityFactory.cpp" />
+    <ClCompile Include="FSM.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameUI.cpp" />
+    <ClCompile Include="Ghost.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="PacMan.cpp" />
     <ClCompile Include="Pellet.cpp" />
+    <ClCompile Include="PowerPellet.cpp" />
     <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="S_MovementState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="B_BaseEntity.h" />
+    <ClInclude Include="B_BaseState.h" />
     <ClInclude Include="B_BaseTile.h" />
+    <ClInclude Include="EntityFactory.h" />
+    <ClInclude Include="FSM.h" />
     <ClInclude Include="GameUI.h" />
+    <ClInclude Include="Ghost.h" />
     <ClInclude Include="IEntity.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="IState.h" />
     <ClInclude Include="ITile.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="PacMan.h" />
     <ClInclude Include="Pellet.h" />
+    <ClInclude Include="PowerPellet.h" />
     <ClInclude Include="Screen.h" />
     <ClInclude Include="TileSize.h" />
+    <ClInclude Include="S_MovementState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

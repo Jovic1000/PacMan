@@ -53,5 +53,7 @@ void B_BaseEntity::SetCollision(int collisionFlags)
 void B_BaseEntity::SetPosition(int positionX, int positionY)
 {
     m_mesh->SetPosition(positionX, positionY);
+    m_x = positionX;
+    m_y = positionY;
 }
 

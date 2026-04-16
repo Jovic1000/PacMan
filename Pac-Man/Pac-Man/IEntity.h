@@ -2,7 +2,7 @@
 
 enum E_TYPE
 {
-	NONE = 0,
+	E_NONE = 0,
 	PACMAN = 1,
 	GHOST = 2,
 	PELLET = 4,

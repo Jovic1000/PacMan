@@ -1,15 +1,22 @@
 #include "GameUI.h"
+#include "Object.h"
 #include "Game.h"
 #include "Screen.h"
 #include "Map.h"
 #include "PacMan.h"
 #include "Pellet.h"
 #include "TileSize.h"
+#include "EntityFactory.h"
 #include <fstream>
-#include <iostream>
 
 void Game::Update()
 {
+	m_player->Update();
+
+	for (int i = 0; i < Num_Of_Pellets; i++)
+	{
+		m_player->GetMesh()->IsOverlapping(m_pellets[i])
+	}
 }
 
 void Game::Render()
@@ -42,11 +49,13 @@ void Game::SetGameRunning(bool isTrue)
 
 bool Game::GetGameRunning()
 {
-	return m_gameRunning;
+	return m_gameRunning && m_screen->GetIsOpen();
 }
 
-Game::Game(const char* gameName) : m_screen(new Screen(gameName)), m_map(new Map()), m_player(new PacMan()), m_pellets(new Pellet*[Num_Of_Pellets]), m_gameRunning(true)
+Game::Game(const char* gameName) : m_screen(new Screen(gameName)), m_map(new Map()), m_player(new PacMan()), m_pellets(new B_BaseEntity*[Num_Of_Pellets]), m_gameRunning(true)
 {
+
+	EntityFactory Facto100;
 
 	int index = 0;
 
@@ -56,34 +65,30 @@ Game::Game(const char* gameName) : m_screen(new Screen(gameName)), m_map(new Map
 	std::ifstream pelletMap;
 	pelletMap.open("assets/EntityMap.txt");
 
-	char pellet;
+	char entity;
 
 	if (pelletMap.is_open())
 	{
 		while (!pelletMap.eof())
 		{
-			pelletMap.get(pellet);
+			pelletMap.get(entity);
 
-			switch (pellet)
+			switch (entity)
 			{
 			case('#'):
 				// nothin
 				break;
 
 			case('.'):
-				m_pellets[index] = new Pellet();
+				m_pellets[index] = Facto100.CreateEntity(entity);
 				m_pellets[index]->SetPosition(x * TileSize, y * TileSize);
-
-				if (index >= Num_Of_Pellets)
-				{
-					std::cerr << "Pellet Error!" << std::endl; 
-				}
-
 				index++;
 				break;
 
 			case('0'):
-				//temp nothin
+				m_pellets[index] = Facto100.CreateEntity(entity);
+				m_pellets[index]->SetPosition(x * TileSize, y * TileSize);
+				index++;
 				break;
 
 			case ('\n'):

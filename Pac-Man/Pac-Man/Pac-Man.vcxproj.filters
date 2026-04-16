@@ -28,6 +28,12 @@
     <Filter Include="Source Files\Entitys">
       <UniqueIdentifier>{a499d94b-2c45-4e32-bb72-0020e7589c3b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="S_States">
+      <UniqueIdentifier>{ef89e7bf-0365-4ac8-80f9-700bb3b1f5a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\S_States">
+      <UniqueIdentifier>{8ec72ec5-815d-4a5a-ba43-29a68781fca3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -56,6 +62,24 @@
     </ClCompile>
     <ClCompile Include="PacMan.cpp">
       <Filter>Source Files\Entitys</Filter>
+    </ClCompile>
+    <ClCompile Include="Ghost.cpp">
+      <Filter>Source Files\Entitys</Filter>
+    </ClCompile>
+    <ClCompile Include="FSM.cpp">
+      <Filter>S_States</Filter>
+    </ClCompile>
+    <ClCompile Include="B_BaseState.cpp">
+      <Filter>Source Files\B_BaseObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="S_MovementState.cpp">
+      <Filter>S_States</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerPellet.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +115,27 @@
     </ClInclude>
     <ClInclude Include="PacMan.h">
       <Filter>Header Files\Entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="Ghost.h">
+      <Filter>Header Files\Entitys</Filter>
+    </ClInclude>
+    <ClInclude Include="FSM.h">
+      <Filter>Header Files\S_States</Filter>
+    </ClInclude>
+    <ClInclude Include="IState.h">
+      <Filter>Header Files\I_Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="B_BaseState.h">
+      <Filter>Header Files\B_BaseObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="S_MovementState.h">
+      <Filter>Header Files\S_States</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerPellet.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

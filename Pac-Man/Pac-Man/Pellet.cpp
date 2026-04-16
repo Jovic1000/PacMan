@@ -11,6 +11,6 @@ void Pellet::Render()
 	GetMesh()->Update();
 }
 
-Pellet::Pellet() : B_BaseEntity(PELLET, NONE, new Object("Assets/EntityMesh/pellet.bmp", GetPositionX(), GetPositionY(), TileSize, TileSize, true))
+Pellet::Pellet() : B_BaseEntity(PELLET, E_NONE, new Object("Assets/EntityMesh/pellet.bmp", GetPositionX(), GetPositionY(), TileSize, TileSize, true))
 {
 }

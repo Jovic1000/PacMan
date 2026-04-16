@@ -1,6 +1,6 @@
 #pragma once
 
-class Pellet;
+class B_BaseEntity;
 class PacMan;
 class Screen;
 class Map;
@@ -26,7 +26,7 @@ private:
 	Map* m_map;
 	PacMan* m_player;
 
-	Pellet** m_pellets;
+	B_BaseEntity** m_pellets;
 
 	bool m_gameRunning;
 
