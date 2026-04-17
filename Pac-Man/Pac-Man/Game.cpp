@@ -23,6 +23,7 @@ void Game::Update()
 				m_pellets[i] = nullptr;
 
 				m_pelletsEaten++;
+				GETUI->IncreaseScore(50);
 			}
 		}
 	}
@@ -30,6 +31,7 @@ void Game::Update()
 	if (m_pelletsEaten == Num_Of_Pellets)
 	{
 		m_gameRunning = false;
+		GETUI->SetEndScreen(true);
 	}
 
 }

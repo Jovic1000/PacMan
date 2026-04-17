@@ -37,10 +37,28 @@ GameUI* GameUI::GetInst()
 	return m_gameUI;
 }
 
+void GameUI::SetEndScreen(bool isTrue)
+{
+	m_endScreen = isTrue;
+}
+
 void GameUI::Render()
 {
+
+	m_scoreTextNum->SetText(std::to_string(m_score).c_str());
+
+	if (m_endScreen)
+	{
+		m_endText->Update();
+	}
+
 	m_livesText->Update();
 	m_scoreText->Update();
+	m_scoreTextNum->Update();
+
+
+	
+
 }
 
 void GameUI::IncreaseScore(int score)
@@ -53,6 +71,8 @@ GameUI::GameUI() : m_nuberOfLives(3), m_score(0)
 {
 	Colour textColour {255,255,255};
 
+	m_scoreTextNum = new TextObject(std::to_string(m_score).c_str(), "Assets/Roboto-Regular.ttf", 20, 470, 610, textColour, true);
 	m_livesText = new TextObject("Lives: ", "Assets/Roboto-Regular.ttf", 20, 20, 610, textColour, true);
 	m_scoreText = new TextObject("Score: ", "Assets/Roboto-Regular.ttf", 20, 400, 610, textColour, true);
+	m_endText = new TextObject("GAMEOVER", "Assets/Roboto-Regular.ttf", 100, 0, 300, textColour, true);
 }

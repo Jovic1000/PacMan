@@ -48,10 +48,10 @@ void FSM::SetState(MOVEMENT_STATES state)
 FSM::FSM(IEntity* entity) : m_entity(entity), m_currentState(IDLE), m_states(new S_MovementState*[MAX])
 {
 	
-	m_states[UP] = new S_MovementState(1, 270, entity);
-	m_states[RIGHT] = new S_MovementState(1, 0, entity);
-	m_states[DOWN] = new S_MovementState(1, 90, entity);
-	m_states[LEFT] = new S_MovementState(1, 180, entity);
+	m_states[UP] = new S_MovementState(2, 270, entity);
+	m_states[RIGHT] = new S_MovementState(2, 0, entity);
+	m_states[DOWN] = new S_MovementState(2, 90, entity);
+	m_states[LEFT] = new S_MovementState(2, 180, entity);
 	m_states[IDLE] = new S_MovementState(1, 1, entity);
 	m_states[DEAD] = new S_MovementState(1, 1, entity);
 	
