@@ -60,26 +60,6 @@ void Game::Render()
 void Game::Init()
 {
 	GameUI::Init();
-}
-
-void Game::SetGameRunning(bool isTrue)
-{
-	m_gameRunning = isTrue;
-}
-
-bool Game::GetGameRunning()
-{
-	return m_gameRunning && m_screen->GetIsOpen();
-}
-
-Screen* Game::GetScreen()
-{
-	return m_screen;
-}
-
-Game::Game(const char* gameName) : m_screen(new Screen(gameName)), m_map(new Map()), m_player(new PacMan()), m_pellets(new B_BaseEntity*[Num_Of_Pellets]), m_gameRunning(true), m_pelletsEaten(0)
-{
-
 	EntityFactory Facto100;
 
 	int index = 0;
@@ -131,11 +111,34 @@ Game::Game(const char* gameName) : m_screen(new Screen(gameName)), m_map(new Map
 
 			x++;
 
+			m_pelletsEaten = 0;
+			GETUI->SetScore(0);
+			GETUI->SetEndScreen(false);
+
 		}
 	}
 
 
 	pelletMap.close();
+}
+
+void Game::SetGameRunning(bool isTrue)
+{
+	m_gameRunning = isTrue;
+}
+
+bool Game::GetGameRunning()
+{
+	return m_gameRunning && m_screen->GetIsOpen();
+}
+
+Screen* Game::GetScreen()
+{
+	return m_screen;
+}
+
+Game::Game(const char* gameName) : m_screen(new Screen(gameName)), m_map(new Map()), m_player(new PacMan()), m_pellets(new B_BaseEntity*[Num_Of_Pellets]), m_gameRunning(true), m_pelletsEaten(0)
+{
 }
 
 Game::~Game()

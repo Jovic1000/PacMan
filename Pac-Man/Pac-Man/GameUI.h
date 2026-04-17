@@ -16,6 +16,7 @@ public:
 	// Getters - Setters
 	static GameUI* GetInst();
 	void SetEndScreen(bool isTrue);
+	void SetScore(int score);
 
 
 private:

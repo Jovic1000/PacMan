@@ -42,11 +42,13 @@ void GameUI::SetEndScreen(bool isTrue)
 	m_endScreen = isTrue;
 }
 
+void GameUI::SetScore(int score)
+{
+	m_score = score;
+}
+
 void GameUI::Render()
 {
-
-	m_scoreTextNum->SetText(std::to_string(m_score).c_str());
-
 	if (m_endScreen)
 	{
 		m_endText->Update();
@@ -64,6 +66,8 @@ void GameUI::Render()
 void GameUI::IncreaseScore(int score)
 {
 	m_score += score;
+
+	m_scoreTextNum->SetText(std::to_string(m_score).c_str());
 }
 
 
