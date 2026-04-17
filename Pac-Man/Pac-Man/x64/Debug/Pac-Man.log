@@ -1,2 +1,9 @@
 ﻿  Game.cpp
+gamewell.lib(Object.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(Object.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(Input.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(Input.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(TextObject.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(TextObject.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(GameScreen.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(GameScreen.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(Renderer.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(Renderer.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(InputManager.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(InputManager.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
+gamewell.lib(IDSystem.obj) : warning LNK4099: PDB 'gamewell.pdb' was not found with 'gamewell.lib(IDSystem.obj)' or at 'E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\gamewell.pdb'; linking object as if no debug info
   Pac-Man.vcxproj -> E:\GitHub Clone Repository\PacMan\Pac-Man\x64\Debug\Pac-Man.exe

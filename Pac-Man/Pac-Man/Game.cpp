@@ -15,17 +15,23 @@ void Game::Update()
 
 	for (int i = 0; i < Num_Of_Pellets; i++)
 	{
-		if(m_pellets[i] != nullptr && m_pelletsEaten >= Num_Of_Pellets)
+		if(m_pellets[i] != nullptr && m_pelletsEaten < Num_Of_Pellets)
 		{
 			if (m_player->GetMesh()->IsOverlapping(*(m_pellets[i]->GetMesh())))
 			{
 				delete m_pellets[i];
-				m_pellets = nullptr;
+				m_pellets[i] = nullptr;
 
 				m_pelletsEaten++;
 			}
 		}
 	}
+
+	if (m_pelletsEaten == Num_Of_Pellets)
+	{
+		m_gameRunning = false;
+	}
+
 }
 
 void Game::Render()
@@ -39,7 +45,10 @@ void Game::Render()
 
 		for (int i = 0; i < Num_Of_Pellets; i++)
 		{
-			m_pellets[i]->Render();
+			if(m_pellets[i] != nullptr)
+			{
+				m_pellets[i]->Render();
+			}
 		}
 	}
 

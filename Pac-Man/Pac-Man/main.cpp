@@ -1,5 +1,6 @@
 #include <Cstdlib>
 #include "GameScreen.h"
+#include "TextObject.h"
 #include "Game.h"
 
 #include <iostream>
@@ -11,6 +12,7 @@ int main()
 	game.Init();
 
 	bool isComplite = true;
+	TextObject endText("GAMEOVER", "Assets/Roboto-Regular.ttf", 300, 300, {255, 255, 255}, true);
 
 	// checks if the game is running and will loop until it is not
 	while (isComplite)
@@ -19,6 +21,11 @@ int main()
 		{
 			game.Update();
 			game.Render();
+		}
+		else if (game.GetGameRunning() == false)
+		{
+			game.Render();
+			
 		}
 	}
 
