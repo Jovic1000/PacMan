@@ -17,11 +17,6 @@ B_BaseEntity* EntityFactory::CreateEntity(char tile)
 	case('0'):
 		return new PowerPellet();
 		break;
-
-	case('C'):
-		return new PacMan();
-		break;
-
 	default:
 		break;
 	}
